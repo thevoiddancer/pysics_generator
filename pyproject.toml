@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "pysics-generator"
+version = "0.1.0"
+description = "Physics-like problem generator"
+authors = ["Tomislav Nazifović <tomislav.nazifovic@gmail.com>"]
+license = "GNU General Public License v3.0"
+readme = "README.md"
+packages = [{include = "pysics_generator"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+sympy = "^1.11"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2"
+black = "^22.12"
+flake8 = "^6.0"
+mypy = "^0"
+isort = "^5.11"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
